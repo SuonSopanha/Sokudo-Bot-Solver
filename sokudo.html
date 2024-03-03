@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <style>
+        .sudoku-board {
+            display: grid;
+            grid-template-columns: repeat(9, 40px);
+            grid-template-rows: repeat(9, 40px);
+            gap: 1px;
+            border: 1px solid black;
+            margin: 20px auto;
+        }
+        .row {
+            display: flex;
+        }
+        
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sudoku Solver</h1>
+    <div id="sudoku-board">
+
+    </div>
+    <button onclick="solveSudoku()">Next Step</button>
+    
+
+
+    <script src="ai.js"></script>
+</body>
+</html>
